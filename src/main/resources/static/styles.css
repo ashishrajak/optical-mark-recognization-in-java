@@ -1,0 +1,28 @@
+/* Style the clouds */
+.cloud {
+  width: 200px;
+  height: 120px;
+  font-size: larger;
+  background-color: rgb(20, 170, 170); /* white color for the clouds */
+  border-radius: 200px;
+  position: relative;
+  margin: auto; /* centers the cloud on the page */
+  animation: move-clouds 20s linear infinite;
+}
+
+/* Add hover properties to the clouds */
+.cloud:hover {
+  font-size: large;
+  background-color: #09de82; /* changes the background color on hover */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* adds a subtle shadow on hover */
+}
+
+/* Add animation for the clouds */
+@keyframes move-clouds {
+  0% {
+      transform: translateX(-1000px);
+  }
+  100% {
+      transform: translateX(1000px);
+  }
+}

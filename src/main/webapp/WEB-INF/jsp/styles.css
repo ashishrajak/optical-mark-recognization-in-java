@@ -1,0 +1,82 @@
+#clouds {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .cloud {
+    position: absolute;
+    background: #fff;
+    width: 200px;
+    height: 60px;
+    border-radius: 200px;
+    -webkit-animation: moveclouds 15s linear infinite;
+    -moz-animation: moveclouds 15s linear infinite;
+    -o-animation: moveclouds 15s linear infinite;
+  }
+  
+  .x1 {
+    top: 80px;
+    left: 100px;
+    -webkit-transform: scale(0.3);
+    -moz-transform: scale(0.3);
+    transform: scale(0.3);
+  }
+  
+  .x2 {
+    top: 300px;
+    left: 50%;
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    transform: scale(0.6);
+  }
+  
+  .x3 {
+    top: 120px;
+    left: 70%;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  
+  .x4 {
+    top: 250px;
+    left: 30%;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  
+  .x5 {
+    top: 30px;
+    left: 60%;
+    -webkit-transform: scale(0.4);
+    -moz-transform: scale(0.4);
+    transform: scale(0.4);
+  }
+  
+  @-webkit-keyframes moveclouds {
+    0% {
+      margin-left: 1000px;
+    }
+    100% {
+      margin-left: -1000px;
+    }
+  }
+  @-moz-keyframes moveclouds {
+    0% {
+      margin-left: 1000px;
+    }
+    100% {
+      margin-left: -1000px;
+    }
+  }
+  @-o-keyframes moveclouds {
+    0% {
+      margin-left: 1000px;
+    }
+    100% {
+      margin-left: -1000px;
+    }
+  }

@@ -1,0 +1,84 @@
+form {
+    width: 500px;
+    margin: 0 auto; /* centers the form on the page */
+    text-align: center; /* centers the form's content */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* adds a subtle shadow to the form */
+}
+
+input[type="text"], input[type="file"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: none;
+    background-color: #f8f8f8; /* adds a light gray background color to the inputs */
+    font-size: 16px;
+}
+
+input[type="button"] {
+    width: 100%;
+    background-color: #4CAF50; /* green background color */
+    color: white; /* text color */
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; /* changes the cursor to a hand when hovering over the button */
+    font-size: 16px;
+}
+
+input[type="button"]:hover {
+    background-color: #3e8e41; /* changes the background color on hover */
+    box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.3); /* adds a green shadow on hover */
+}
+
+/* Add some animation for the dust particles on hover */
+@keyframes particle-animation {
+    0% {
+        transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    }
+    100% {
+        transform: translateX(50%) translateY(50%) rotate(360deg);
+    }
+}
+
+/* Style the dust particles */
+.particle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+transform: translateX(-50%) translateY(-50%);
+width: 10px;
+height: 10px;
+border-radius: 50%;
+background-color: #ffc107; /* yellow color for the particles /
+animation: particle-animation 1s ease-in-out infinite;
+/ Apply the animation to the particles */
+}
+
+/* Add some styling for the dust particles */
+input[type="button"]:hover .particle:nth-child(1) { animation-delay: 0s; }
+input[type="button"]:hover .particle:nth-child(2) { animation-delay: 0.2s; }
+input[type="button"]:hover .particle:nth-child(3) { animation-delay: 0.4s; }
+input[type="button"]:hover .particle:nth-child(4) { animation-delay: 0.6s; }
+input[type="button"]:hover .particle:nth-child(5) { animation-delay: 0.8s; }
+input[type="button"]:hover .particle:nth-child(6) { animation-delay: 1s; }
+
+/* Add additional particle elements as needed /
+/ Example:
+input[type="button"]:hover .particle:nth-child(7) { animation-delay: 1.2s; }
+input[type="button"]:hover .particle:nth-child(8) { animation-delay: 1.4s; }
+*/
+
+Copy code
+#loading-icon {
+    display: none;
+    background-image: url('path/to/loading-icon.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+   
